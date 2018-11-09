@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property IBOutlet UITextField *redTextField;
+@property IBOutlet UITextField *greenTextField;
+@property IBOutlet UITextField *blueTextField;
+- (IBAction)buttonClick:(UIButton *)sender;
+
+- (IBAction)redTextFieldClick:(UITextField *)sender;
+- (IBAction)greenTextFieldClick:(UITextField *)sender;
+- (IBAction)blueTextFieldClick:(UITextField *)sender;
 
 @end
 

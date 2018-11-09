@@ -25,5 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)buttonClick:(UIButton *)sender
+{
+    [_redTextField setAdjustsFontSizeToFitWidth:true];
+    [_redTextField setMinimumFontSize:12];
+    _redTextField.text = [NSString stringWithFormat:@"被按下的按键是：%@", sender.currentTitle];
+}
+
 
 @end
