@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		506221CF2195F44100775112 /* button_go.png in Resources */ = {isa = PBXBuildFile; fileRef = 506221CE2195F44100775112 /* button_go.png */; };
 		915F5FBB21956A4700776807 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 915F5FBA21956A4700776807 /* main.m */; };
 		915F5FBE21956A4700776807 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915F5FBD21956A4700776807 /* AppDelegate.m */; };
 		915F5FC121956A4700776807 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915F5FC021956A4700776807 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		506221CE2195F44100775112 /* button_go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_go.png; path = ../../../../../Downloads/button_go.png; sourceTree = "<group>"; };
 		915F5FB621956A4700776807 /* LearniOSUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearniOSUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915F5FBA21956A4700776807 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		915F5FBC21956A4700776807 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		915F5FB921956A4700776807 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				506221CE2195F44100775112 /* button_go.png */,
 				915F5FBA21956A4700776807 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				915F5FC921956A4700776807 /* LaunchScreen.storyboard in Resources */,
+				506221CF2195F44100775112 /* button_go.png in Resources */,
 				915F5FC621956A4700776807 /* Assets.xcassets in Resources */,
 				915F5FC421956A4700776807 /* Main.storyboard in Resources */,
 			);
@@ -315,6 +319,7 @@
 				915F5FCF21956A4700776807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

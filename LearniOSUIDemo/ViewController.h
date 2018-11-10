@@ -8,16 +8,33 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+
+@property int redNumber;
+@property int greenNumber;
+@property int blueNumber;
+
+@property UIAlertAction *alert;
+
+@property IBOutlet UILabel *label;
 
 @property IBOutlet UITextField *redTextField;
 @property IBOutlet UITextField *greenTextField;
 @property IBOutlet UITextField *blueTextField;
-- (IBAction)buttonClick:(UIButton *)sender;
 
-- (IBAction)redTextFieldClick:(UITextField *)sender;
-- (IBAction)greenTextFieldClick:(UITextField *)sender;
-- (IBAction)blueTextFieldClick:(UITextField *)sender;
+@property IBOutlet UIButton *goButton;
+
+- (IBAction)buttonClick:(UIButton *)sender;
+- (IBAction)calculateButtonClick:(UIButton *)sender;
+
+- (IBAction)redTextFieldEditEnd:(UITextField *)sender;
+- (IBAction)greenTextFieldEditEnd:(UITextField *)sender;
+- (IBAction)blueTextFieldEditEnd:(UITextField *)sender;
+- (IBAction)dismissKeyboard:(id)sender;
+
+//- (IBAction)redTextFieldEditChanged:(UITextField *)sender;
+//- (IBAction)greenTextFieldEditChanged:(UITextField *)sender;
+//- (IBAction)blueTextFieldEditChanged:(UITextField *)sender;
 
 @end
 

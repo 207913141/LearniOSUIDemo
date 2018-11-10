@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,56 +21,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-E2-r7r">
-                                <rect key="frame" x="164" y="515" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNg-te-yt8"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHv-MG-SPG">
-                                <rect key="frame" x="231" y="172" width="97" height="30"/>
+                                <rect key="frame" x="277" y="166" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="greenTextFieldClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAL-Nw-xNN"/>
+                                    <action selector="greenTextFieldEditEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="jrV-Wy-cr8"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hm4-RW-zAi">
-                                <rect key="frame" x="231" y="270" width="97" height="30"/>
+                                <rect key="frame" x="277" y="264" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="blueTextFieldClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tf3-zf-N6J"/>
+                                    <action selector="blueTextFieldEditEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="roO-32-PHt"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="03Q-cz-wPL">
-                                <rect key="frame" x="231" y="72" width="97" height="30"/>
+                                <rect key="frame" x="277" y="68" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="redTextFieldClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtc-4y-2fu"/>
+                                    <action selector="redTextFieldEditEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="z2W-fy-gVR"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNe-cx-GaC">
+                                <rect key="frame" x="82" y="166" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="红灯数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24S-Fb-krb">
+                                <rect key="frame" x="184" y="68" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="绿灯数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-uF-0Xd">
+                                <rect key="frame" x="184" y="166" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="蓝灯数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2k-El-Ub9">
+                                <rect key="frame" x="184" y="264" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="灯总数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQd-l2-tzM">
+                                <rect key="frame" x="62" y="104" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8Y-ul-sO6">
+                                <rect key="frame" x="73" y="28" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="env-eB-F8d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBF-pq-Wea">
+                                <rect key="frame" x="486" y="214" width="112" height="110"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_go.png"/>
+                                <connections>
+                                    <action selector="calculateButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSE-cu-Fb4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="blueTextField" destination="hm4-RW-zAi" id="hBj-zE-SJr"/>
-                        <outlet property="greenTextField" destination="LHv-MG-SPG" id="Iqs-Gb-9B5"/>
-                        <outlet property="redTextField" destination="03Q-cz-wPL" id="AKq-yh-Jvw"/>
-                        <outlet property="textField" destination="03Q-cz-wPL" id="51b-3b-U8S"/>
+                        <outlet property="blueTextField" destination="hm4-RW-zAi" id="xM4-Iy-UxQ"/>
+                        <outlet property="goButton" destination="XBF-pq-Wea" id="roQ-7Q-Y5n"/>
+                        <outlet property="greenTextField" destination="LHv-MG-SPG" id="feJ-JW-zLZ"/>
+                        <outlet property="label" destination="zNe-cx-GaC" id="TwU-KU-yi2"/>
+                        <outlet property="redTextField" destination="03Q-cz-wPL" id="2y2-wd-9rc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="25.637181409295355" y="26.399999999999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_go.png" width="112" height="110"/>
+    </resources>
 </document>
